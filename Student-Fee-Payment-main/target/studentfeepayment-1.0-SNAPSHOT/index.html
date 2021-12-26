@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to IIIT Bangalore</title>
+    <link rel="icon" href="assets/images/iiitb-invert-logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bills.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            text-align:center;
+            width: 100%;
+            background-color: #e6e6fae8;
+        }
+
+        input[type=text], input[type=password]{
+            width:20%;
+            padding:7px 10px;
+            margin: 10px 0;
+            display:inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button{
+            background-color:#4CAF50;
+            width: 10%;
+            padding: 9px 5px;
+            margin:10px 0px 0px 35px;
+            cursor:pointer;
+            border:none;
+            color:#ffffff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        button:hover{
+            opacity:0.8;
+        }
+
+        #un,#ps{
+            font-family:'Lato', sans-serif;
+            color: gray;
+        }
+
+
+        #container{
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width:600;
+            height: 300px;
+            text-align: center;
+        }
+
+        /* Login form css */
+
+    </style>
+</head>
+<div>
+    <nav>
+        <img src="assets/images/iiitb-invert-logo.png" onclick="goToHome()" alt="">
+        <label class="logo"> IIIT - Bangalore</label>
+        <ul>
+            <li><a onclick="goToHome()">Home</a></li>
+            </li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+</div>
+<body>
+<div id="container">
+    <form class="needs-validation-students" id="login-validation">
+
+        <div class="border-box">
+            <label for="userName" id="un">Username:</label>
+            <input type="text" name="userName" placeholder="User Name" id="userName"><br/>
+
+            <label for="password" id="ps">Password:</label>
+            <input type="password" name="password" placeholder="Password" id="password"><br/>
+
+            <button type="submit">Login</button>
+
+            <a href="StudentRegister.html" class="text-reset">Register here</a>
+        </div>
+
+    </form>
+</div>
+</body>
+<script src="assets/js/form-validation.js"></script>
+</html>
+
+
+</body>
+<script src="assets/js/form-validation.js"></script>
+</html>

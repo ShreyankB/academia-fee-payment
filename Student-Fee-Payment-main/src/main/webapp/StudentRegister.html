@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to IIIT Bangalore</title>
+    <link rel="icon" href="assets/images/iiitb-invert-logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bills.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+
+<body>
+<div>
+    <nav>
+        <img src="assets/images/iiitb-invert-logo.png" onclick="goToHome()" alt="">
+        <label class="logo"> IIIT - Bangalore</label>
+        <ul>
+            <li><a onclick="goToHome()">Home</a></li>
+            </li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+</div>
+<div class="container register">
+    <div class="row">
+        <div class="col-md-9 register-right">
+            <div class="tab-content" id="myTabContent">
+                    <h3 class="register-heading">Enter the following details</h3>
+                    <form class="register-student" id="register-student">
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName" class="sr-only">User Name</label>
+                                    <input id="firstName" type="text" class="form-control" placeholder="First Name"
+                                           required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="sr-only">User Name</label>
+                                    <input id="lastName" type="text" class="form-control" placeholder="Last Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="sr-only">User Name</label>
+                                    <input id="password" type="password" class="form-control" placeholder="Password"
+                                           required/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">User Name</label>
+                                    <input id="email" type="email" class="form-control" placeholder="Your Email"
+                                           required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="graduationYear" class="sr-only">User Name</label>
+                                    <input id="graduationYear" type="number" class="form-control"
+                                           placeholder="Graduation Year" min="2021"
+                                           max="2100"/>
+                                </div>
+                                <input type="submit" class="btnRegister" value="Register"/>
+                            </div>
+                            <div class="form-group">
+                                <p class="register-card-dupe-email" id="dupeEmail"></p>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="assets/js/register-student.js"></script>
+</html>
